@@ -1,36 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planetas Js</title>
+    <title>Planetas JS</title>
+    <link rel="stylesheet" href="estilos.css">
+    
+    <!-- Tipografías de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caacupe+One&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
- <section>
-    <nav>
-        <ul>
-            <li><span>Weigh</span></li>
-            <li><span>SISTEMA v.3.4</span></li>
-            <li><span></span></li>
-            <li><span>TELEMILITRORIA GRAVITACIONAL ACTIVA</span></li>
-            <li><span>Calculadora</span></li>
-        </ul>
-    </nav>
- </section>
- <section>
+
+    <!-- 1 NAVEGACIÓN -->
+    <header class="nav">
+        <nav>
+            <ul>
+                <li><i class="fa-solid fa-scale-balanced" style="color: rgb(5, 255, 223);"></i></li>
+                <li><span class="peso">WEIGHT // ORBIT</span></li>
+                <li><span class="sistema">SISTEMA v.3.4</span></li>
+                <li><span class="activa">TELEMETRÍA GRAVITACIONAL ACTIVA</span></li>
+                <li><span class="calculadora">Calculadora</span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2 INFORMACIÓN PRINCIPAL -->
     <main>
-        <span>Explorador de biomecanica interplanetaria</span>
-        <h1>¿CUANTO PESARIAS FUERA DEL PLANETA TIERRA?</h1>
-        <p>Descubre como cambiaria tu peso bajo la gravedad de otros mundos. una simulacion de telemetria fisica calibrada con datos astrometricos precisos.</p>
-        <button>Explorar mi peso</button><button>Ver sistema solar (8 MUNDOS)</button>
+        <section class="main">
+            <span class="explorador">Explorador de biomecánica interplanetaria</span>
+            <h1>CUANTO PESARÍAS <span>FUERA DE TIERRA?</span></h1>
+            <p>Descubre cómo cambiaría tu peso bajo la gravedad de otros mundos. Una simulación de telemetría física calibrada con datos astrométricos precisos.</p>
+            <button class="explorar">Explorar mi peso</button>
+            <div>
+                <button class="ver">Ver sistema solar (8 MUNDOS)</button>
+            </div>
+        </section>
     </main>
- </section>
- <section>
-    <span>PARAMETROS DE ENTRADA</span>
-    <h2>CALIBRACION GRAVITORIA</h2>
-    <p>Seleciona tu destino cosmico e ingresa tu masa terrestre para proyectar la deformacion de peso gravitario</p>
-    <div></div>
-    <div></div>
- </section>
+
+    <!-- 3 FORMULARIO Y SECCIÓN -->
+    <section class="fm">
+        <div class="formulario">
+            <span class="entrada">PARÁMETROS DE ENTRADA</span>
+            <h2>CALIBRACIÓN GRAVITATORIA</h2>
+            <p>Selecciona tu destino cósmico e ingresa tu masa terrestre para proyectar la deformación de peso gravitatorio.</p>
+        </div>
+
+        <div class="formu">
+            <form action="">
+                <h3>CONSOLA TELEMÉTRICA</h3>
+                <p>Estándar COSPAR / IAU WGS84</p>
+                
+                <label for="planeta">
+                    <i class="fa-solid fa-globe"></i>
+                    1. SELECCIONA UN PLANETA
+                </label>
+                <select name="planeta" id="planeta">
+                    <option value="3.7">Mercurio (3.7 m/s²)</option>
+                    <option value="8.87">Venus (8.87 m/s²)</option>
+                    <option value="9.81" selected>Tierra (9.81 m/s²)</option>
+                    <option value="3.71">Marte (3.71 m/s²)</option>
+                    <option value="24.79">Júpiter (24.79 m/s²)</option>
+                    <option value="10.44">Saturno (10.44 m/s²)</option>
+                    <option value="8.69">Urano (8.69 m/s²)</option>
+                    <option value="11.15">Neptuno (11.15 m/s²)</option>
+                </select>
+
+                <label for="peso">
+                    <i class="fa-solid fa-scale-balanced" style="color: rgb(209, 255, 5);"></i>
+                    2. INGRESA TU PESO EN KG
+                </label>
+                <input type="number" id="peso" name="peso" value="60">
+                
+                <button class="calcula" type="submit">⚡ CALCULAR MI PESO →</button>
+            </form>
+        </div>
+
+        <!-- 4 TARJETAS PLANETAS -->
+        <section class="plane">
+            <div class="plane-titulos">
+                <span>TELEMETRÍA COMPARATIVA</span>
+                <h2>EL SISTEMA SOLAR EN UN CLIC</h2>
+                <p>Pulsa cualquier cuerpo celestial para recalcular instantáneamente tu peso con animación orbital completa.</p>
+            </div>
+            
+            <div class="planetas">
+                <div class="pp">
+                    <h3>MERCURIO</h3>
+                    <span>3.70 m/s²</span>
+                    <h4>26.4 kg</h4>
+                </div>
+                <div class="pp">
+                    <h3>VENUS</h3>
+                    <span>8.87 m/s²</span>
+                    <h4>63.3 kg</h4>
+                </div>
+                <div class="pp">
+                    <h3>TIERRA</h3>
+                    <span>9.81 m/s²</span>
+                    <h4>70.0 kg</h4>
+                </div>
+                <div class="pp">
+                    <h3>MARTE</h3>
+                    <span>3.71 m/s²</span>
+                    <h4>26.5 kg</h4>
+                </div>
+                <div class="pp">
+                    <h3>JÚPITER</h3>
+                    <span>24.79 m/s²</span>
+                    <h4>176.9 kg</h4>
+                </div>
+                <div class="pp">
+                    <h3>SATURNO</h3>
+                    <span>10.44 m/s²</span>
+                    <h4>74.5 kg</h4>
+                </div>
+                <div class="pp">
+                    <h3>URANO</h3>
+                    <span>8.69 m/s²</span>
+                    <h4>62.0 kg</h4>
+                </div>
+                <div class="pp">
+                    <h3>NEPTUNO</h3>
+                    <span>11.15 m/s²</span>
+                    <h4>79.6 kg</h4>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
