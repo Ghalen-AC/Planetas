@@ -193,7 +193,7 @@ i{
    
 }
 form{
-    max-width: 480px;
+    width: 480px;
     border-radius: 8px;
     padding: 30px;
     margin-left: 10px;
@@ -228,6 +228,9 @@ background-color: #080a0f;
 .formu{
     padding: 30px 1px 70px 10px;
     border-bottom: solid 1px rgba(128, 128, 128, 0.386);
+    display: flex;
+    justify-content: center;
+    text-align: center;
 
 }
 .formulario p{
