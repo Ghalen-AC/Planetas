@@ -193,7 +193,9 @@ i{
    
 }
 form{
+
     width: 400px;
+    width: 480px;
     border-radius: 8px;
     padding: 50px;
     margin-left: 10px;
@@ -230,7 +232,7 @@ background-color: #080a0f;
     border-bottom: solid 1px rgba(128, 128, 128, 0.386);
     display: flex;
     justify-content: center;
-
+    text-align: center;
 }
 .formulario p{
     margin: 0px;
