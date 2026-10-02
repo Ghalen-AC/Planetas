@@ -48,8 +48,11 @@
             <p>Selecciona tu destino cósmico e ingresa tu masa terrestre para proyectar la deformación de peso gravitatorio.</p>
         </div>
 
+        
         <div class="formu">
+
             <form action="">
+
                 <h3 class="consola">CONSOLA TELEMÉTRICA</h3>
                 <p>Estándar COSPAR / IAU WGS84</p>
                 
@@ -74,16 +77,26 @@
                 </label>
                 <input type="number" id="peso" name="peso" value="60">
                 
-                <button class="calcula" type="submit">⚡ CALCULAR MI PESO →</button>
+                <button class="calcula" id="calcular" type="button">⚡ CALCULAR MI PESO →</button>
+
+                <strong id="resultado">Tu peso seria:</strong>
+
             </form>
+
         </div>
+<section class="info">
+    <div>
+        <p id="distancia"> </p>
+    </div>
+    
+</section>
 
     
         <section class="plane">
             <div class="plane-titulos">
                 <span>TELEMETRÍA COMPARATIVA</span>
-                <h2>EL SISTEMA SOLAR EN UN CLIC</h2>
-                <p>Pulsa cualquier cuerpo celestial para recalcular instantáneamente tu peso con animación orbital completa.</p>
+                <h2>CONOCE EL SISTEMA SOLAR</h2>
+                <p>Descubre las características únicas de cada planeta y cómo afectan tu peso en el espacio.</p>
             </div>
             
             <div class="planetas">
@@ -103,8 +116,7 @@
                     <h4>70.0 kg</h4>
                 </div>
                 <div class="pp">
-                    <img src="marte.png" alt="">
-                    <span><h3 class="marte">Marte</h3></span>
+                    <h3 class="marte">MARTE</h3>
                     <span>3.71 m/s²</span>
                     <h4 class="marte">26.5 kg</h4>
                 </div>
@@ -124,10 +136,10 @@
                     <h4>62.0 kg</h4>
                 </div>
                 <div class="pp">
-                    <img src="neptuno.png" alt="">
                     <h3 class="neptuno">NEPTUNO</h3>
                     <span>11.15 m/s²</span>
                     <h4 class="neptuno">79.6 kg</h4>
+                    
                 </div>
             </div>
         </section>
