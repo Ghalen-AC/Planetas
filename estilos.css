@@ -360,3 +360,17 @@ form:hover{
     transition: 0.6s;
     box-shadow: 0 0 40px rgba(237, 241, 18, 0.356);
 }
+.idioma{
+    padding: 8px 8px;
+    border-radius: 5px;
+    background-color: rgba(28, 28, 31, 0.255);
+    color: rgb(253, 253, 255);
+    border: solid 1px rgba(47, 44, 44, 0.614);
+    font-family: "JetBrains Mono", monospace;
+    text-align: center;
+}
+.idioma:hover{
+    transform: scale(1.02);
+    transition: 0.6s;
+    box-shadow: 0 0 40px rgba(18, 241, 230, 0.164);
+}
